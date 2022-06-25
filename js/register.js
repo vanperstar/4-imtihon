@@ -20,7 +20,7 @@ formEl.addEventListener('submit', async event => {
         const { name,isAdmin, ...loginCredentials } = credentials
         const result = await loginRequest(loginCredentials)
         localStorage.setItem('token', result['Authorization'])
-        window.location.href = "/index.html"
+        window.location.href = "/admin.html"
         console.log(result)
     }
 })
