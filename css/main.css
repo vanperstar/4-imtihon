@@ -1,0 +1,143 @@
+
+
+
+.saved-posts{
+    gap: 10px;
+}
+.saved-post{
+    overflow-y: auto;
+    background: #dadcdd;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.posts-sav{
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    
+}
+.posts-item{
+    width: 56%;
+}
+.posts-title{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 140%;
+    
+    color: #344767;
+}
+.posts-desc{
+    color: #7B809A;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+}
+.posts-links{
+    margin-left: auto;
+    display: flex; 
+    gap: 36px;
+    width: 0;
+    transform: translateX(190px);
+}
+.posts-delete{
+    height: 5px;
+    display: flex;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    color: #F44334;
+}
+.posts-delete::before{
+    content: "";
+    width: 15px;
+    height: 17px;
+    margin-right: 10px;
+    background: url(../img/delete.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    align-items: center;
+}
+
+.posts-edit{
+    height: 5px;
+    display: flex;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    color: #344767;
+}
+.posts-edit::before{
+    content: "";
+    width: 15px;
+    height: 17px;
+    margin-right: 10px;
+    background: url(../img/pencil.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    align-items: center;
+}
+.posts-save{
+    transform: translateY(45px) translateX(-85px);
+    height: 5px;
+    display: flex;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    color: #7EFF41;
+}
+.posts-save::before{
+    content: "";
+    margin-right: 10px;
+    width: 15px;
+    height: 17px;
+    background: url(../img/save.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    align-items: center;
+}
+
+
+
+.saved{
+    background: #F8F9FA;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+.saved-item{
+    width: 56%;
+}
+.saved-title{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 140%;
+    
+    color: #344767;
+}
+.saved-desc{
+    color: #7B809A;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+}
+.saved-delete{
+    display: flex;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    color: #F44334;
+}
+.saved-delete::before{
+    content: "";
+    width: 15px;
+    height: 17px;
+    margin-right: 10px;
+    background: url(../img/delete.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    align-items: center;
+}

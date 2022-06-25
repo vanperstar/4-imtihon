@@ -5,12 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2-imtihon</title>
+    <title>4-imtihon</title>
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <h2>Index html</h2>
-    <!-- <script src="./js/register.js"></script> -->
-    <script src="./js/main.js"></script>
+    <div>
+        <div class=" saved-posts w-100 d-flex p-3">
+            <div class="posts col-6">
+                
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="saved">
+                <div class="saved-item">
+                    <h4 class="saved-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                    <p class="saved-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid, necessitatibus quaerat tempore ut quod iure repudiandae ipsum blanditiis excepturi non placeat quos animi modi totam qui culpa tempora quisquam.</p>
+                </div>
+                <div>
+                    <a class="saved-delete" href="#">DELETE</a>
+                </div>
+            </div>
+        </div>
+        <nav class="pagination" aria-label="...">
+            <ul class="pagination pagination-sm">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <template id="posts-templet">
+        <div class=" saved-post col w-100 d-flex p-3">
+            <div class=" posts col-6">
+                <div class=" save-posts">
+                    <div class="posts-sav">
+                     <div class="posts-item">
+                         <h4 class="posts-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                         <p class="posts-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, eius nulla. Quo voluptate a, dolor aspernatur dignissimos numquam alias nostrum cum aut suscipit accusantium tempore corporis culpa laudantium in fugiat!</p>
+                        </div>
+                        <div class="posts-links">
+                         <a class="posts-delete" href="#">DELETE</a>
+                         <a class="posts-edit" href="#">EDIT</a>
+                         <a class="posts-save" href="#">SAVE</a>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </template>
+    <template id="pagination-item">
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
+    </template>
     <script src="./js/http.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

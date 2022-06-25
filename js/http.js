@@ -40,3 +40,17 @@ async function registerRequest (credentials){
     })
     return result
 }
+
+async function postRequest (credentials){
+    const token = localStorage.getItem('token')
+    const result = await fetchAPI({
+        url:`${API}/api/posts`,
+        method:"GET",
+        headers: {
+            "Authorization": token
+        },
+        body:credentials
+    })
+    return result
+}
+
