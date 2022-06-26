@@ -52,7 +52,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmI1NmM3Z
 Content-Type: application/json
 
 {
-    "title":"Lorem ipsum dolor",
+    "title":"fugiat veniam minus",
     "body":"lorem body"
 }
 
@@ -67,12 +67,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmI1NmM3Z
 
 
 ###
-PUT https://fast-ravine-16741.herokuapp.com/api/posts/62b5923544840ac7507902d1
+GET  https://fast-ravine-16741.herokuapp.com/api/posts
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmI1NmM3ZTE2ZTYzNmI4MTMyOWQyNGYiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTYwNjU1NzF9.7USky5F4BDuoMKgR67b2OLKpNejp2PpcvRUoDuazGfg
 Content-Type: application/json
 
 {
-    "title":"lorem title",
+    "title":"delectus aut autem",
     "body":"Lorem changed12 title"
 }
 

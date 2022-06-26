@@ -24,3 +24,27 @@ formEl.addEventListener('submit', async event => {
         console.log(result)
     }
 })
+
+
+var showPassword = document.querySelector(".show-password")
+// showPassword.addEventListener('click', () => {
+//     if(password.type == 'password') {
+//         password.type = 'text';
+//         showPassword.classList.toggle('fa-eye-slash')
+//         showPassword.classList.toggle('fa-eye')
+//     }
+//     else {
+//         password.type = 'password'
+//         showPassword.classList.toggle('fa-eye')
+//         showPassword.classList.add('fa-eye-slash')
+//     }
+// })
+
+
+showPassword.addEventListener('click', () => {
+    let nextSibling = showPassword.nextElementSibling
+    if(nextSibling.type == "password")nextSibling.type = 'text'
+    else{
+        nextSibling.type = 'password'
+    }
+})

@@ -11,31 +11,42 @@
 </head>
 <body>
     <div>
-        <div class=" saved-posts w-100 d-flex p-3">
-            <div class="posts col-6">
+        <div>
+            <a class="logaut btn" href="./index.html">Logout</a>
+        </div>
+        <div class=" saved-posts  w-100 d-flex p-3">
+            <div class="posts border p-2 col-6">
+                
+            </div>
+            <div class="saved-push border p-2 col-6">
                 
             </div>
         </div>
-        <div class="col-6">
-            <div class="saved">
-                <div class="saved-item">
-                    <h4 class="saved-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                    <p class="saved-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid, necessitatibus quaerat tempore ut quod iure repudiandae ipsum blanditiis excepturi non placeat quos animi modi totam qui culpa tempora quisquam.</p>
-                </div>
-                <div>
-                    <a class="saved-delete" href="#">DELETE</a>
-                </div>
+
+        <div class="my-modal">
+            <div class="my-modal-content position-relative text-center">
+                <h2 class="mt-5 my-modal-title">EDIT POST</h2>
+                <form class="form-control modal-form">
+                    <label class="w-100">
+                        <input class="modal-form-title p-2" type="text" placeholder="title">
+                    </label>
+                    <label class="w-100">
+                        <input class="modal-form-body p-2" type="text" placeholder="body">
+                    </label>
+                    <div class="mt-3">
+                        <button class="modal-form-cancel btn" type="submit">Cancel</button>
+                        <button class="modal-form-save me-3" type="submit">Save changes</button>
+                    </div>
+                </form>
             </div>
         </div>
-        <nav class="pagination" aria-label="...">
-            <ul class="pagination pagination-sm">
-              <li class="page-item active" aria-current="page">
-                <span class="page-link">1</span>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-            </ul>
-        </nav>
+        <div class="row">
+            <div class="col">
+                <ul class="pagination">
+                    
+                </ul>
+            </div>
+        </div>
     </div>
 
     <template id="posts-templet">
@@ -48,25 +59,32 @@
                          <p class="posts-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, eius nulla. Quo voluptate a, dolor aspernatur dignissimos numquam alias nostrum cum aut suscipit accusantium tempore corporis culpa laudantium in fugiat!</p>
                         </div>
                         <div class="posts-links">
-                         <a class="posts-delete" href="#">DELETE</a>
-                         <a class="posts-edit" href="#">EDIT</a>
-                         <a class="posts-save" href="#">SAVE</a>
+                         <p class="posts-delete" href="">DELETE</p>
+                         <p class="posts-edit" href="">EDIT</p>
+                         <p class="posts-save" href="">SAVE</p>
                         </div>
                     </div>
                  </div>
             </div>
         </div>
     </template>
+
+    <template id="save-templete">
+        <div class="saved mb-2">
+            <div class="saved-item">
+                <h4 class="saved-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p class="saved-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aliquid, necessitatibus quaerat tempore ut quod iure repudiandae ipsum blanditiis excepturi non placeat quos animi modi totam qui culpa tempora quisquam.</p>
+            </div>
+            <div>
+                <a class="saved-delete" href="#">DELETE</a>
+            </div>
+        </div>
+    </template>
+
     <template id="pagination-item">
-        <nav aria-label="...">
-            <ul class="pagination pagination-sm">
-              <li class="page-item active" aria-current="page">
-                <span class="page-link">1</span>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-            </ul>
-        </nav>
+        <li class="page-item">
+            <a href="" class="page-link">1</a>
+        </li>
     </template>
     <script src="./js/http.js"></script>
     <script src="./js/main.js"></script>
